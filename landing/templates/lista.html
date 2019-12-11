@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h1>Lista de suas frases e dúvida</h1>    
+    {% for item in listar_frase %}
+        <p>Nome do Aluno:{{item.nome}}</p>
+            <p>Frase:{{item.frase}}</p>
+            <a href="alunos/delete/{{item.id}}">Deletar</a>
+        <hr>
+    {% endfor %}
+
+
+{% endblock %}
