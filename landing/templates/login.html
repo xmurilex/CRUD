@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1> Olá usuário, faça seu login abaixo: </h1>
+<form action="">
+    <label for="email">Email</label>
+    <input type="email">
+    <label for="senha">Senha</label>
+    <input type="password">
+</form>
+<a href="/alunos/lista">verificar</a>
+
+<h2>Se você ainda não tem login, clique aqui</h2>
+<a href="alunos/cadastro">inscrever-se</a>
+
+{% endblock %}

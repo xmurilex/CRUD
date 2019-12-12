@@ -29,5 +29,16 @@ def deletar(request):
     if item is not None:
         item.ativo = False
         item.save()
-        return redirect('aluno/listar')
-    return render(request, 'lista.html')
+        return redirect('/alunos/lista')
+    return redirect('/')
+
+def home(request):
+    return render (request, 'home.html')
+
+def login(request):
+    if request.method=='POST':
+        return render(request, 'lista.html')
+    return render (request, 'login.html')
+
+def inscricao(request):
+    return render(request, 'index.html')

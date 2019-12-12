@@ -2,6 +2,17 @@ body{
     margin-left: 20px;
 }
 
+nav{
+    margin-top: 0;
+    font-size: 15pt;
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    height: 60px;
+    align-items: center;
+}
+
+
 .titulo-index{
     color: blue;
     font-size: 30pt;
